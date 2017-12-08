@@ -6,6 +6,7 @@ toolUrl: https://google.com.br/
 date:   2017-11-18 10:36:44 -0200
 category: jekyll
 image: https://arobil.com/wp-content/uploads/2017/05/2017-05-28_12-51-39-1024x475.png
-user: oseunando
-userImage: https://avatars3.githubusercontent.com/u/1318271?s=260&v=4
+image: https://fundamental.digital/wp-content/uploads/2017/12/dashboard-rd-station.gif
+user: equipeGH
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
 ---

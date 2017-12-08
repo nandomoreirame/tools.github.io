@@ -5,7 +5,7 @@ description: "To add new posts, simply add a file in the `_posts` directory that
 toolUrl: https://google.com.br/
 date:   2017-11-18 10:36:44 -0200
 category: jekyll
-image: http://www.vincentwee.com/wp-content/uploads/2015/09/Growth-Hacking-Plagspotter.png
-user: oseunando
-userImage: https://avatars3.githubusercontent.com/u/1318271?s=260&v=4
+image: https://fundamental.digital/wp-content/uploads/2017/12/dashboard-rd-station.gif
+user: equipeGH
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
 ---
