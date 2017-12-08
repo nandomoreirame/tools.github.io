@@ -5,7 +5,7 @@ description: "To add new posts, simply add a file in the `_posts` directory that
 toolUrl: https://google.com.br/
 date:   2017-11-18 10:36:44 -0200
 category: automação
-image: /www.vincentwee.com/wp-content/uploads/2015/09/Growth-Hacking-Plagspotter.png
+image: www.vincentwee.com/wp-content/uploads/2015/09/Growth-Hacking-Plagspotter.png
 user: equipeGH
 userImage: https://avatars3.githubusercontent.com/u/12776154?s=460&v=4
 ---
