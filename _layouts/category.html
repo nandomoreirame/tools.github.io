@@ -1,0 +1,12 @@
+---
+layout: default
+bodyClass: categories
+---
+
+<div class="tools__list">
+  {% for post in site.posts %}
+    {% if post.category == page.slug %}
+      {% include toolsCard.html %}
+    {% endif %}
+  {% endfor %}
+</div>

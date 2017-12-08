@@ -1,0 +1,23 @@
+doctype html
+html(lang='pt-br')
+  head
+    include ../includes/head.pug
+    block stylesheets
+      link(href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,700', rel='stylesheet')
+      link(href='./assets/stylesheets/bundle' + fileHash + '.css', rel='stylesheet')
+  body
+    .base
+      input(type="checkbox" id="toggleSidebar")
+      label.toggleSidebar(for='toggleSidebar' role='button' tabindex='1')
+        svg.feather.feather-arrow-left(xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewbox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round')
+          line(x1='20' y1='12' x2='4' y2='12')
+          polyline(points='10 18 4 12 10 6')
+      include ../includes/sidebar.pug
+      .main(role='main')
+        include ../includes/header.pug
+        block content
+        include ../includes/footer.pug
+      block scripts
+        script(src='./assets/javascripts/vendor' + fileHash + '.js')
+        script(src='./assets/javascripts/bundle' + fileHash + '.js')
+

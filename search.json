@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+  {% for post in site.posts %}
+    {
+      "title": "{{ post.title | escape }}",
+      "image": "{{ post.image }}",
+      "description": "{{ post.description }}",
+      "category": "{{ post.category }}",
+      "url": "{% if post.toolUrl %}{{ post.toolUrl }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}",
+      "user": "{{ post.user }}",
+      "userImage": "{{ post.userImage }}",
+      "date": "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

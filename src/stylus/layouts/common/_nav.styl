@@ -1,0 +1,40 @@
+.nav
+  list-style none
+  padding 0
+  margin 0
+  &__item
+    display block
+    margin-bottom 2px
+  &__link
+    font-size 14px
+    text-decoration none
+    display block
+    padding .75rem 1.25rem
+    border-radius .3125rem
+    transition color .2s ease-in-out,
+      background-color .2s ease-in-out
+    &,
+    &:hover,
+    &:focus
+      color whiteColor
+    &--active,
+    &:hover,
+    &:focus
+      background-color rgba(whiteColor, .2)
+    &--active
+      pointer-events none
+  &__badge
+    float right
+    position relative
+    top 1px
+    color #111
+    background-color rgba(whiteColor, .75)
+    display inline-block
+    padding .25em .4em
+    font-size 12px
+    font-weight 700
+    line-height 1
+    text-align center
+    white-space nowrap
+    vertical-align baseline
+    border-radius .25rem

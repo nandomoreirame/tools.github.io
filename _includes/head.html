@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="pt-br">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>
+  {% if page.title == 'Home' %} {{ site.title }} &bull; {{ site.description }} {% else %} {{ page.title }} &bull; {{ site.title }} {% endif %}
+</title>
+
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="robots" content="index,follow">
+<meta http-equiv="cache-control" content="cache">
+<meta http-equiv="revisit-after" content="1 day">
+<link rel="manifest" href="/manifest.json">
+
+<!-- FACEBOOK:start-->
+<meta property="og:title" content="{% if page.title == 'Home' %} {{ site.title }} &bull; {{ site.description }} {% else %} {{ page.title }} &bull; {{ site.title }} {% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:image" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}image.jpg">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:site_name" content="Site Name">
+<meta property="fb:admins" content="Facebook numeric ID">
+<!-- FACEBOOK:end-->
+
+<!-- Schema.org markup for Google+-->
+<meta itemprop="name" content="{% if page.title == 'Home' %} {{ site.title }} &bull; {{ site.description }} {% else %} {{ page.title }} &bull; {{ site.title }} {% endif %}">
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- TWITTER:start-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@publisher_handle">
+<meta name="twitter:title" content="{% if page.title == 'Home' %} {{ site.title }} &bull; {{ site.description }} {% else %} {{ page.title }} &bull; {{ site.title }} {% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:image:src" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}image.jpg">
+<!-- TWITTER:end-->
+
+<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="{{ "/assets/stylesheets/bundle.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<script>
+  var base_url = '{{ "/" | prepend: site.baseurl | prepend: site.url }}';
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ site.ga_ua }}']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

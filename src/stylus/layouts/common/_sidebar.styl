@@ -1,0 +1,68 @@
+.sidebar
+  max-width 20rem
+  display flex
+  -webkit-box-orient vertical
+  -webkit-box-direction normal
+  flex-direction column
+  height 100vh
+  background #3a3838 url(../images/hero-image.png) no-repeat 85% 0
+  background-size cover 100%
+  z-index 200
+  position fixed
+  left 0
+  right 0
+  bottom 0
+  transition all .3s cubic-bezier(.4,2,.68,1)
+  transform translate3d(-100%, 0, 0)
+  +above(tablet-md)
+    transform translate3d(0, 0, 0)
+  &::before
+    content ''
+    position absolute
+    display block
+    width 100%
+    height 100%
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color rgba(#3a3838, .9)
+    z-index 1
+  &__title
+    display block
+    text-align center
+    font-size 22px
+    padding 1.875rem 1.25rem
+    flex: none
+    a
+      color whiteColor
+      font-weight fontWeightBold
+      text-decoration none
+    svg
+      display inline-block
+    span
+      display block
+  &__title,
+  &__footer,
+  &__navbar
+    position relative
+    z-index 2
+  &__navbar
+    padding 0 1.25rem
+    flex 1
+    &,
+    .nav
+      overflow-y auto
+    .nav
+      margin-bottom 1.2rem
+  &__footer
+    padding 1rem 1.25rem
+    border-top 1px solid rgba(whiteColor, .2)
+    justify-content space-around
+    display: flex
+    a
+      align-items: center
+    svg
+      width 1.375rem
+      fill whiteColor
+

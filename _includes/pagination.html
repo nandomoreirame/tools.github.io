@@ -1,0 +1,17 @@
+<nav class="pagination" role="pagination">
+
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a class="newer-posts" href="{{ "/" | prepend: site.baseurl }}" title="Página anterior">← Página anterior</a>
+    {% else %}
+      <a class="newer-posts" href="{{ site.baseurl }}/p/{{ paginator.previous_page }}/" title="Página anterior">← Página anterior</a>
+    {% endif %}
+  {% endif %}
+
+  <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a class="older-posts" href="{{ site.baseurl }}/p/{{ paginator.next_page }}/" title="Próxima página">Próxima página →</a>
+  {% endif %}
+
+</nav>

@@ -1,0 +1,12 @@
+---
+layout: default
+title: Home
+---
+
+<div class="tools__list">
+  {% for post in paginator.posts %}
+    {% include toolsCard.html %}
+  {% endfor %}
+</div>
+
+{% include pagination.html %}

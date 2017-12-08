@@ -1,0 +1,40 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Ferramentas de Growth Hacking
+email: contato@fundamental.digital
+description: "A simple front-end growth-hacking-tools with Babel, Gulpjs, Pug and Stylus"
+
+url: "https://ferramentas.digital"
+baseurl: ""
+permalink: /:title/
+paginate: 9
+paginate_path: "/p/:num"
+domain_name: ferramentas.digital
+ga_ua: UA-XXXXXXXX-X
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+collections:
+  categories:
+    output: true
+    permalink: /categoria/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - yarn.lock
+  - README.md
+  - package.json
+  - gulpfile.js
+  - config.js
+  - public/
+  - html/
+  - src/

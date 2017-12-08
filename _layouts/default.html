@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  {% include head.html %}
+</head>
+<body class="{{ bodyClass }}">
+  <div class="base">
+    {% include sidebar.html %}
+    <div class="main" role="main">
+      {% include header.html %}
+
+      <div class="tools">
+        <header class="tools__heading">
+          <h1 class="tools__title" title="{% if post.title %} {{ post.title }} {% else %} {% if page.title == 'Home' %} {{ site.title }} {% else %} {{ page.title }} {% endif %} {% endif %}">
+            {% if post.title %}
+                {{ post.title }}
+            {% else %}
+                {% if page.title == 'Home' %}
+                  {{ site.title }}
+                {% else %}
+                  {{ page.title }}
+                {% endif %}
+            {% endif %}
+          </h1>
+        </header>
+        {{ content }}
+      </div>
+
+      {% include footer.html %}
+    </div>
+  </div>
+</body>
+</html>

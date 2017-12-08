@@ -1,0 +1,34 @@
+<article class="toolsCard">
+  <a class="toolsCard__inner" href="{% if post.toolUrl %}{{ post.toolUrl }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}" {% if post.toolUrl %}target="_blank"{% endif %}>
+    <figure class="toolsCard__figure" style="background-image: url('{{ post.image }}')">
+      <img class="toolsCard__image" src="{{ post.image }}" alt="{{ post.title }}">
+    </figure>
+    <header class="toolsCard__heading">
+      <h2 class="toolsCard__title">{{ post.title }}</h2>
+      <p class="toolsCard__desc">{{ post.description }}</p>
+    </header>
+    <footer class="toolsCard__footer">
+      {% if post.user %}
+        <div class="toolsCard__user">
+          {% if post.userImage %}
+          <img src="{{ post.userImage }}" width="36" height="36" alt="">
+          {% endif %}
+          <span>
+            <small>Enviado por </small>
+            <strong>@{{ post.user }}</strong>
+          </span>
+        </div>
+      {% endif %}
+      {% if post.toolUrl %}
+        <div class="toolsCard__link">
+          <svg class="feather feather-external-link" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewbox="0 0 24 24" fill="none" stroke="#6FA1E8" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </div>
+      {% endif %}
+    </footer>
+  </a>
+</article>

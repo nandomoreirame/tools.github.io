@@ -1,0 +1,54 @@
+html
+  font-size fontSizeBase
+
+body
+  color textColor
+  font-family fontFamilyBase
+  font-weight fontWeightRegular
+  font-size fontSizeBase
+  line-height lineHeightBase
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p
+  margin toRem(spacingSmall) 0
+  &:first-child
+    margin-top 0
+  &:last-child
+    margin-bottom 0
+
+p
+  &.lead
+    text-align center
+    padding-bottom spacingLarge
+    font-size: fontSizeBase * 1.2
+    font-weight 300
+    span
+      margin-bottom toRem(spacingSmall)
+      display block
+h1
+  font-size fontSizeBase * 2
+h2
+  font-size fontSizeBase * 1.6
+h3
+  font-size fontSizeBase * 1.4
+h4
+  font-size fontSizeBase * 1.2
+h5, h6
+  font-size fontSizeBase * 1
+
+a
+  color linkColor
+  text-decoration underline
+  &:hover,
+  &:focus
+    color linkColorHover
+    text-decoration none
+  &:focus
+    outline: 3px solid rgba(linkColor, .7)
+    outline-offset: 3px

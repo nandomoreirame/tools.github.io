@@ -1,0 +1,98 @@
+body
+  background-color backgroundBase
+
+hr
+  border none
+  border-bottom borderBase
+  margin spacingBase 0
+
+.base
+  min-height 100vh
+
+.main
+  background-color backgroundBase
+  padding 120px 3rem 0
+  transition all .3s cubic-bezier(.4, 2, .68, 1)
+  width 100%
+  margin-left 0
+  @extend $clearfix
+  +above(tablet-md)
+    width calc(100% - 20rem)
+    padding 120px 6.25rem 0
+    margin-left 20rem
+
+.toggleMenu,
+.toggleSidebar
+  background none transparent
+  border none
+  padding 10px
+  cursor pointer
+  transition all .5s cubic-bezier(.4, 2, .68, 1)
+  transform rotate(0deg)
+  svg
+    margin 0
+    padding 0
+    line-height 1
+
+.toggleMenu
+  float right
+  position relative
+  z-index 200
+  +above(tablet-md)
+    display none
+
+.toggleSidebar
+  float left
+  transform rotate(180deg)
+  position fixed
+  top 0
+  left 20px
+  margin 0
+  line-height 1
+  z-index 300
+  svg
+    stroke textColor
+  +above(tablet-md)
+    transition margin .5s cubic-bezier(.4, 2, .68, 1)
+    top 5px
+    margin-left 20rem
+    transform rotate(0deg)
+
+input#toggleMenu,
+input#toggleSearch,
+input#toggleSidebar
+  @extend .sr-only
+
+input#toggleMenu
+  &:checked
+    ~ .header__navbar
+      transform translate3d(0, -35%, 0)
+    // ~ .toggleMenu
+    //   transform rotate(90deg)
+
+input#toggleSidebar
+  &:checked
+    ~ .sidebar
+      transform translate3d(0, 0, 0)
+    ~ .main,
+    ~ .main .header
+        width calc(100% - 20rem)
+        margin-left 20rem
+    ~ .toggleSidebar
+      transform rotate(0deg)
+      margin-left 0
+      top 5px
+    ~ .toggleSidebar svg
+      stroke #fff
+    +above(tablet-md)
+      ~ .sidebar
+        transform translate3d(-100%, 0, 0)
+      ~ .main,
+      ~ .main .header
+          width 100%
+          margin-left 0
+      ~ .toggleSidebar
+        transform rotate(180deg)
+        top 0
+        svg
+          stroke textColor
