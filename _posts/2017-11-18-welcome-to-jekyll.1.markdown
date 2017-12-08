@@ -6,6 +6,6 @@ toolUrl: http://rdstation.com.br
 date:   2017-11-18 10:36:44 -0200
 category: All in one
 image: https://fundamental.digital/wp-content/uploads/2017/12/dashboard-rd-station.gif
-user: equipe GH
+user: equipeGH
 userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
 ---
