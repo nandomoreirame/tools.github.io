@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Woodpecker"
-description: "Vender é sobre engajar. Seja por inbound ou outbound,
-o Reev conecta você a todo o seu público alvo de maneira personalizada."
+description: "COLD EMAILS & FOLLOW-UPS sent automatically from your mailbox."
 toolUrl: https://woodpecker.co/
 date:   2017-11-18 10:36:44 -0200
 category: outbound
