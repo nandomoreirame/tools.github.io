@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ferramentas de Growth Hacking
+title: Growth Tools
 email: contato@fundamental.digital
 description: "A simple front-end growth-hacking-tools with Babel, Gulpjs, Pug and Stylus"
 
