@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Como contribuir
+permalink: /sobre/
 ---
 
 ## Gostaria de cadastrar sua ferramenta aqui?
