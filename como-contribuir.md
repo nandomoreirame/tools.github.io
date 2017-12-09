@@ -6,4 +6,4 @@ permalink: /contribuir/
 
 ## Gostaria de cadastrar sua ferramenta aqui?
 
-Entre em contato <a href="maito:contato@fundamental.digital"></a>contato@fundamental.digital
+Entre em contato <a href="mailto:contato@fundamental.digital">contato@fundamental.digital</a>
