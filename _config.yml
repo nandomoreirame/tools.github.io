@@ -14,7 +14,7 @@ permalink: /:title/
 paginate: 9
 paginate_path: "/p/:num"
 domain_name: ferramentas.digital
-ga_ua: UA-XXXXXXXX-X
+ga_ua: UA-51117727-31
 
 markdown: kramdown
 plugins:
