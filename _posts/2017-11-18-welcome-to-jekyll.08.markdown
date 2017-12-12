@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Pipz"
+description: "Adquira e converta leads, engaje com clientes e analise suas estratégias de negócio, tudo no mesmo lugar."
+toolUrl: https://pipz.com/br
+date:   2017-11-18 10:36:44 -0200
+category: allinone
+image: https://fundamental.digital/wp-content/uploads/2017/12/dashboard.png
+user: equipeGH
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
+---
