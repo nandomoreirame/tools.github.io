@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Trello"
+description: "Trello lets you work more collaboratively and get more done."
+toolUrl: https://trello.com
+date:   2017-11-18 10:36:44 -0200
+category: gestao
+image: https://fundamental.digital/wp-content/uploads/2017/12/trello-freelance-board.png
+user: equipeGH
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
+---

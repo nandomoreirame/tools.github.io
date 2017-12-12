@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Basecamp"
+description: "Basecamp organizes your communication, projects, and client work together so you have a central source of truth."
+toolUrl: https://basecamp.com/
+date:   2017-11-18 10:36:44 -0200
+category: gestao
+image: https://fundamental.digital/wp-content/uploads/2017/12/basecamp-dashboard.png
+user: equipeGH
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
+---
