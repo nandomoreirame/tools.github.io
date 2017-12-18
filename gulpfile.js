@@ -90,8 +90,8 @@ task('stylus', () =>
 
 /* eslint no-useless-escape: 0  */
 task('generate-service-worker', () => wbBuild.generateSW({
-  globDirectory: './',
-  swDest: `./sw.js`,
+  globDirectory: './_site/',
+  swDest: `./_site/sw.js`,
   globPatterns: ['**\/*.{html,js,css}']
 })
   .then(() => {
@@ -101,7 +101,7 @@ task('generate-service-worker', () => wbBuild.generateSW({
     console.log('[ERROR] This happened: ' + err)
   }))
 
-task('webserver', () =>
+task('webserver', ['generate-service-worker'], () =>
   src(config.dest.public)
     .pipe($.webserver(config.webServer)))
 
@@ -112,6 +112,6 @@ task('stream', () => {
 })
 
 task('build', (cb) =>
-  sequence(['templates', 'stylus', 'scripts', 'images', 'fonts'], ['generate-service-worker'], cb))
+  sequence(['templates', 'stylus', 'scripts', 'images', 'fonts'], cb))
 
 task('default', (cb) => sequence('build', 'stream', ['webserver'], cb))
