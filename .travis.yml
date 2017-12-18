@@ -16,7 +16,7 @@ cache:
 before_script:
   - nvm install stable
   - node -v
-  - npm install npm -g
+  - npm install -g npm yarn
   - yarn install
 
 script: "yarn build"
