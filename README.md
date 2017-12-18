@@ -1,6 +1,6 @@
-# Ferramentas de Growth Hacking
+# Ferramentas de Growth Hacking / Growth Tools
 
-> A simple front-end growth-hacking-tools with Babel, Gulpjs, Pug and Stylus
+> Curadoria de recursos para fazer sua empresa crescer.
 
 ```bash
 $ bundle install
