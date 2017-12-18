@@ -20,9 +20,8 @@ before_script:
   - npm install -g npm yarn
   - yarn install
 
-script: "yarn build"
-
-after_script:
+script:
+  - yarn build
   - bundle exec jekyll build
   - yarn sw
 
