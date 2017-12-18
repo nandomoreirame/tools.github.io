@@ -20,9 +20,10 @@
   <nav class="sidebar__navbar">
     <ul class="nav">
       {% for category in site.categories %}
+        {% assign current = page.url | downcase | split: '/' %}
+        {% assign slug = category.url | downcase | split: '/' %}
         <li class="nav__item">
-          <!-- <a class="nav__link nav__link--active" href="{{ category.url | prepend: site.baseurl }}">{{ category.title }}</a> -->
-          <a class="nav__link" href="{{ category.url | prepend: site.baseurl }}" title="{{ category.title }}">{{ category.title }}</a>
+          <a class="nav__link{% if current[2] == slug[2] %} nav__link--active{% endif %}" href="{{ category.url | prepend: site.baseurl }}" title="{{ category.title }}">{{ category.title }}</a>
         </li>
       {% endfor %}
     </ul>

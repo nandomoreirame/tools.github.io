@@ -12,32 +12,5 @@
       <line x1="3" y1="18" x2="21" y2="18"></line>
     </svg>
   </label>
-  <nav class="header__navbar">
-    <ul class="header__nav">
-      <li class="header__nav-item">
-        <label class="header__nav-search" for="toggleSearch">
-          <svg class="feather feather-search" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="10.5" cy="10.5" r="7.5"></circle>
-            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-          </svg>
-        </label>
-      </li>
-      <li class="header__nav-item">
-        <a class="header__nav-link" href="{{ '/' | prepend: site.baseurl }}">Página inicial</a>
-      </li>
-      <li class="header__nav-item">
-        <a class="header__nav-link" href="{{ '/sobre' | prepend: site.baseurl }}">Sobre o projeto</a>
-      </li>
-      <li class="header__nav-item">
-        <a class="header__nav-link" href="https://comunidade.growthacking.co" target="_blank">Comunidade</a>
-      </li>
-      <li class="header__nav-item">
-        <a class="header__nav-link" href="https://growthacking.co" target="_blank">Portal</a>
-      </li>
-      <li class="header__nav-item">
-        <a class="header__nav-link" href="{{ '/contribuir' | prepend: site.baseurl }}">Como contribuir</a>
-      </li>
-    </ul>
-  </nav>
+  {% include navbar.html %}
 </header>

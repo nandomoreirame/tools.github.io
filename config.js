@@ -23,8 +23,7 @@ module.exports = {
     stylus: './src/stylus',
     scripts: './src/scripts',
     views: './src/views',
-    static: './src/static',
-    images: './src/images'
+    static: './src/static'
   },
   dest: {
     public: './html',

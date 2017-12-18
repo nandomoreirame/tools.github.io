@@ -15,12 +15,18 @@ const isProduction = config.isProduction
 const $ = config.plugins
 
 task('images', () =>
-  src(`${config.src.images}/**/*`)
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
+  src(`${config.dest.images}/**/*`)
+    .pipe($.cache($.image({
+      pngquant: true,
+      optipng: true,
+      zopflipng: true,
+      advpng: true,
+      jpegRecompress: false,
+      jpegoptim: true,
+      mozjpeg: true,
+      gifsicle: true,
+      svgo: true
     })))
-    .pipe($.size(config.size('images')))
     .pipe(dest(config.dest.images)))
 
 task('fonts', () =>
@@ -103,7 +109,6 @@ task('stream', () => {
   watch([`${config.src.views}/**/*`], ['templates'])
   watch([`${config.src.scripts}/**/*`], ['scripts'])
   watch([`${config.src.stylus}/**/*`], ['stylus'])
-  watch([`${config.src.images}/**/*`], ['images'])
 })
 
 task('build', (cb) =>
