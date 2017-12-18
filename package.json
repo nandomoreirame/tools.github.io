@@ -9,8 +9,8 @@
     "clean": "rimraf public",
     "start": "npm run clean && NODE_ENV=production gulp",
     "dev": "npm run clean && NODE_ENV=development gulp",
-    "deploy": "npm run build && push-dir --dir=public --branch=gh-pages --cleanup --force",
     "build": "npm run clean && NODE_ENV=production gulp build",
+    "sw": "gulp generate-service-worker",
     "test": "echo 'no has test! lol'"
   },
   "repository": {
