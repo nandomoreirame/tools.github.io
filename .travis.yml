@@ -14,7 +14,6 @@ cache:
     - "node_modules"
 
 before_script:
-  - nvm -v
   - nvm install stable
   - node -v
   - npm install npm -g
