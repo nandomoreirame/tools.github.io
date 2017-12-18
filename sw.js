@@ -20,19 +20,23 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "_includes/footer.html",
-    "revision": "b36cde93652bef15a63b211d3bcc2a4e"
+    "revision": "38ae4117d8c13280fd8a4405168fbe92"
   },
   {
     "url": "_includes/head.html",
-    "revision": "8dd307493ac8a44ca9be4d8d469ffbdb"
+    "revision": "847e9969d01d343f503421b8f2252941"
   },
   {
     "url": "_includes/header.html",
-    "revision": "8734ff306106635cc40adc6ccbf4f08f"
+    "revision": "c3dfa50bc731e2b6ce82ff8e42cf0f49"
+  },
+  {
+    "url": "_includes/navbar.html",
+    "revision": "80aa89b78ccaf17843ea745b87e9add0"
   },
   {
     "url": "_includes/pagination.html",
-    "revision": "2bd59cbe38ad6d804a67d138e26987bf"
+    "revision": "7001763c039b65ba2af1426231aad87e"
   },
   {
     "url": "_includes/search.html",
@@ -40,7 +44,7 @@ const fileManifest = [
   },
   {
     "url": "_includes/sidebar.html",
-    "revision": "7fd553b22fccee5cbe13cb83183a0689"
+    "revision": "b45707c871ef6899bf1cc6b141fd2dbc"
   },
   {
     "url": "_includes/toolsCard.html",
@@ -48,7 +52,7 @@ const fileManifest = [
   },
   {
     "url": "_layouts/category.html",
-    "revision": "2fe96b17032f0e3e15657af529328033"
+    "revision": "1496e0ca277cab410849d02df3c918dd"
   },
   {
     "url": "_layouts/default.html",
@@ -64,7 +68,7 @@ const fileManifest = [
   },
   {
     "url": "_site/404/index.html",
-    "revision": "5bb27017da5d95faccf8d96a38cbc3f7"
+    "revision": "1544a57d4fac00fd975d92110404d13f"
   },
   {
     "url": "_site/assets/javascripts/bundle.js",
@@ -76,95 +80,99 @@ const fileManifest = [
   },
   {
     "url": "_site/assets/stylesheets/bundle.css",
-    "revision": "a6e341bdb9d3a3e515767d36f18cca47"
+    "revision": "94843487b28a0091278108de589fae20"
+  },
+  {
+    "url": "_site/basecamp/index.html",
+    "revision": "387de89237c286efd93c7cb1fae28756"
   },
   {
     "url": "_site/categoria/allinone/index.html",
-    "revision": "486546dbca161d46a33159fd2b5f1dc3"
+    "revision": "cb8f6a1ce76e49f8ecc15e9b682ce067"
   },
   {
     "url": "_site/categoria/analytics/index.html",
-    "revision": "9ee12eafc1eda111557cd68a6d98b8d2"
+    "revision": "77c397cb121699eb69df32e8b4f01e19"
   },
   {
     "url": "_site/categoria/gestao/index.html",
-    "revision": "19e75eb31572e5fcb7aaa6fa49b22030"
+    "revision": "967a7cf8c33ed2dec0f088cc91ddcc79"
   },
   {
     "url": "_site/categoria/repositorios/index.html",
-    "revision": "b853116ba89caac9933c9be192c38092"
+    "revision": "bb2567a40fda76e528bb8601564107b5"
   },
   {
     "url": "_site/categoria/vendas/index.html",
-    "revision": "cdacde70090f4945bd44f39ede34c99a"
+    "revision": "36738b65ea475cb4d48ff6e35efe41bc"
+  },
+  {
+    "url": "_site/codepen/index.html",
+    "revision": "d51ca4fa8401a3d89f05b5aa8cbeb922"
   },
   {
     "url": "_site/contribuir/index.html",
-    "revision": "beb58e5181ec709da6a1d6eda3e31e54"
+    "revision": "2c34e9168b44bdf37a70d6a744c2b010"
+  },
+  {
+    "url": "_site/exemplo/index.html",
+    "revision": "79c0d7cd76dcd44f5dddcb0fcf84bfe2"
+  },
+  {
+    "url": "_site/github/index.html",
+    "revision": "e731126ef0129ebf4f6a35817fbac00b"
+  },
+  {
+    "url": "_site/google-analytics/index.html",
+    "revision": "d883749ebeeb20add3704c5ca2bcd68a"
   },
   {
     "url": "_site/index.html",
-    "revision": "303ef3afd8f59e6de2bf43c579bb0776"
+    "revision": "812cd0399948d380e17dca74694017db"
+  },
+  {
+    "url": "_site/meetime/index.html",
+    "revision": "818e58ff8162da42308345f825cac41b"
+  },
+  {
+    "url": "_site/mixpanel/index.html",
+    "revision": "04fc3f2eb243610c4e058dc9f8629d6a"
   },
   {
     "url": "_site/p/2/index.html",
-    "revision": "a8be0a3720af740e3c0fa0de536b9d10"
+    "revision": "0e3d6867050235c01d1bfe309753e6d2"
+  },
+  {
+    "url": "_site/pipz/index.html",
+    "revision": "d2ccfaeef3fc59f3db7881349d16d673"
+  },
+  {
+    "url": "_site/ramper/index.html",
+    "revision": "381ff13b1dc715f2ad3ea3ac33be9c1d"
+  },
+  {
+    "url": "_site/rdstation/index.html",
+    "revision": "15053df16444f1ee1c716c0f6d768603"
+  },
+  {
+    "url": "_site/reev/index.html",
+    "revision": "c934aabc2e26a951bcd5a2ee5c9e0f28"
   },
   {
     "url": "_site/sobre/index.html",
-    "revision": "bdb7885a6f5893d3d75a95685799f25d"
+    "revision": "e2eb7b4ab09fd4e39035b542da700749"
   },
   {
     "url": "_site/sw.js",
-    "revision": "5a7e687575c038003a4734bbbf6807e7"
+    "revision": "af420de1bd95c8066544f974359f796b"
   },
   {
-    "url": "_site/welcome-to-jekyll.0/index.html",
-    "revision": "b821201e084eb0b53d892d193f85005d"
+    "url": "_site/trello/index.html",
+    "revision": "a32007a6eca7f0c8a31481493d253135"
   },
   {
-    "url": "_site/welcome-to-jekyll.01/index.html",
-    "revision": "b972b50138523e9e536411f7ffd93eb1"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.02/index.html",
-    "revision": "7047c5b171249a0a589b26a2001982c3"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.03/index.html",
-    "revision": "b34d0360327459c8801fd6a1d0af1c63"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.04/index.html",
-    "revision": "4d31a5e3d0f3e29bb26dd9107cfc1d1e"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.05/index.html",
-    "revision": "56327262408ed028d65477549d7c59e0"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.06/index.html",
-    "revision": "6ed49d2a92553797a84d7fb0ad533bd1"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.07/index.html",
-    "revision": "90f377c9b631c9290afd5cf8a3eaea1c"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.08/index.html",
-    "revision": "b1026de530cc01b8e2adf0e9f6f476f5"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.09/index.html",
-    "revision": "47308334b2a85b4a73daf2ef6930aae2"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.10/index.html",
-    "revision": "f48948f9d942bddec5e2d2efaae8dff5"
-  },
-  {
-    "url": "_site/welcome-to-jekyll.11/index.html",
-    "revision": "4b919ea9518e0433846aaf6261037301"
+    "url": "_site/woodpecker/index.html",
+    "revision": "376e79b33801b410e51b2863e2786f5a"
   },
   {
     "url": "_site/workbox-sw.prod.v2.1.2.js",
@@ -184,7 +192,7 @@ const fileManifest = [
   },
   {
     "url": "assets/stylesheets/bundle.css",
-    "revision": "ac975ed57d7f3e0dee27ad54cf5fe9c0"
+    "revision": "94843487b28a0091278108de589fae20"
   },
   {
     "url": "config.js",

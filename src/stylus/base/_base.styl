@@ -11,11 +11,13 @@ hr
 
 .main
   background-color backgroundBase
-  padding 120px 3rem 0
+  padding 120px 1rem 0
   transition all .3s cubic-bezier(.4, 2, .68, 1)
   width 100%
   margin-left 0
   @extend $clearfix
+  +above(phone-sm)
+    padding 120px 2rem 0
   +above(tablet-md)
     width calc(100% - 20rem)
     padding 120px 6.25rem 0

@@ -1,0 +1,33 @@
+.pagination
+  display block
+  text-align center
+  margin-top spacingBase
+  @extend .clearfix
+  .container
+    position relative
+  a, span
+    display inline-block
+    padding 15px
+    width 100%
+    +above(phone-sm)
+      display block
+      width auto
+  span
+    opacity .6
+  &__prev
+    +above(phone-sm)
+      float left
+      left 0
+  &__next
+    +above(phone-sm)
+      float right
+      right 0
+  &__prev,
+  &__next
+    margin 0
+    @extend .button
+    @extend .button--default
+    +above(phone-sm)
+      top 0
+      position absolute
+      z-index 10
