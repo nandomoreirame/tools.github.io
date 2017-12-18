@@ -3,6 +3,8 @@ layout: default
 bodyClass: categories
 ---
 
+{{ content }}
+
 <div class="tools__list">
   {% for post in site.posts %}
     {% if post.category == page.slug %}
