@@ -1,4 +1,4 @@
-# Ferramentas de Growth Hacking / Growth Tools
+# Growth Tools [![Build Status](https://travis-ci.org/iFundamental/tools.github.io.svg?branch=master)](https://travis-ci.org/iFundamental/tools.github.io)
 
 > Curadoria de recursos para fazer sua empresa crescer.
 
