@@ -8,5 +8,5 @@ date:   2017-11-18 10:36:44 -0200
 category: vendas
 image: https://fundamental.digital/wp-content/uploads/2017/12/Reev-10.png
 user: equipeGH
-userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-4.png
+userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-04.png
 ---
