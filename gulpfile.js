@@ -77,7 +77,7 @@ task('stylus', () =>
     .pipe($.plumber.stop()))
 
 /* eslint no-useless-escape: 0  */
-task('generate-service-worker', () => wbBuild.generateSW({
+task('sw', () => wbBuild.generateSW({
   globDirectory: './_site/',
   swDest: `./_site/sw.js`,
   globPatterns: ['**\/*.{html,js,css}']

@@ -9,7 +9,7 @@
     "clean": "rimraf _site",
     "start": "npm run clean && NODE_ENV=production gulp",
     "dev": "npm run clean && concurrently -k --kill-others-on-fail \"NODE_ENV=development gulp\" \"bundle exec jekyll serve\"",
-    "build": "npm run clean && NODE_ENV=production gulp build && bundle exec jekyll build",
+    "build": "npm run clean && NODE_ENV=production gulp build && bundle exec jekyll build --incremental && gulp sw",
     "test": "echo 'no has test! lol'"
   },
   "repository": {
@@ -55,7 +55,6 @@
     "gulp-data": "^1.2.1",
     "gulp-eslint": "^4.0.0",
     "gulp-hash": "^4.1.1",
-    "gulp-imagemin": "^3.3.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-named": "^1.0.0",
     "gulp-notify": "^3.0.0",
