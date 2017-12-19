@@ -8,13 +8,12 @@ branches:
     - gh-pages
 
 cache:
-  - bundler
-  - yarn
+  bundler: true
+  yarn: true
   directories:
     - "node_modules"
 
-gemfile:
-  - GemfileTravis
+gemfile: GemfileTravis
 
 before_script:
   - bundle install
