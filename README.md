@@ -2,9 +2,16 @@
 
 > Curadoria de recursos para fazer sua empresa crescer.
 
+### Development
+
 ```bash
 $ bundle install
 $ yarn install # or npm install
 $ yarn dev # or npm run dev
-$ bundle exec jekyll serve # or jekyll serve
+```
+
+### Build
+
+```bash
+$ yarn build # or npm run build
 ```
