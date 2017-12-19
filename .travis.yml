@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1
+  - 2.3
 
 branches:
   only:
@@ -16,14 +16,10 @@ cache:
 before_script:
   - bundle install
   - nvm install stable
-  - node -v
-  - npm install -g npm yarn
   - yarn install
 
 script:
   - yarn build
-  - bundle exec jekyll build
-  - yarn sw
 
 deploy:
   provider: pages

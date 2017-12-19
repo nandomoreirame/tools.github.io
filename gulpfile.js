@@ -10,12 +10,11 @@ const {
 const config = require('./config')
 const sequence = require('run-sequence')
 const wbBuild = require('workbox-build')
-const assign = require('lodash.assign')
 const isProduction = config.isProduction
 const $ = config.plugins
 
 task('images', () =>
-  src(`${config.dest.images}/**/*`)
+  src(`${config.src.images}/**/*`)
     .pipe($.cache($.image({
       pngquant: true,
       optipng: true,
@@ -32,17 +31,6 @@ task('images', () =>
 task('fonts', () =>
   src('./node_modules/font-awesome/fonts/*')
     .pipe(dest(config.dest.fonts)))
-
-task('templates', () =>
-  src('./src/views/*.pug')
-    .pipe($.plumber(config.plumber))
-    .pipe($.data(file => assign({ fileHash: '' }, config.pkg)))
-    .pipe($.pug({
-      pretty: true
-    }))
-    .pipe($.size(config.size('templates')))
-    .pipe(dest(config.dest.public))
-    .pipe($.plumber.stop()))
 
 task('scripts', ['scripts:vendor'], () =>
   src([`${config.src.scripts}/**/*.js`])
@@ -101,17 +89,12 @@ task('generate-service-worker', () => wbBuild.generateSW({
     console.log('[ERROR] This happened: ' + err)
   }))
 
-task('webserver', ['generate-service-worker'], () =>
-  src(config.dest.public)
-    .pipe($.webserver(config.webServer)))
-
-task('stream', () => {
-  watch([`${config.src.views}/**/*`], ['templates'])
+task('watch', () => {
   watch([`${config.src.scripts}/**/*`], ['scripts'])
   watch([`${config.src.stylus}/**/*`], ['stylus'])
 })
 
 task('build', (cb) =>
-  sequence(['templates', 'stylus', 'scripts', 'images', 'fonts'], cb))
+  sequence(['stylus', 'scripts', 'images', 'fonts'], cb))
 
-task('default', (cb) => sequence('build', 'stream', ['webserver'], cb))
+task('default', (cb) => sequence(['build'], ['watch'], cb))

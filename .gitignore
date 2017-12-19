@@ -65,5 +65,4 @@ public
 html
 sw.js
 workbox-sw.*
-assets/stylesheets
-assets/javascripts
+assets

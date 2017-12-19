@@ -1,9 +1,6 @@
-'use strict'
-
 const pkg = require('./package.json')
 const { join } = require('path')
 const loadPlugins = require('gulp-load-plugins')
-const crypto = require('crypto')
 const jeet = require('jeet')
 const rupture = require('rupture')
 
@@ -11,22 +8,16 @@ const env = process.env.NODE_ENV || 'development'
 const isProduction = env === 'production'
 const $ = loadPlugins()
 
-const hasher = crypto.createHash('sha1').update(new Date().toLocaleString(), 'utf8')
-const fileHash = isProduction ? `.${hasher.digest('hex').slice(0, 8)}.min` : ''
-
 module.exports = {
   pkg,
   isProduction,
   plugins: $,
-  fileHash,
   src: {
     stylus: './src/stylus',
     scripts: './src/scripts',
-    views: './src/views',
-    static: './src/static'
+    images: './src/images'
   },
   dest: {
-    public: './html',
     stylesheets: './assets/stylesheets',
     javascripts: './assets/javascripts',
     images: './assets/images',
