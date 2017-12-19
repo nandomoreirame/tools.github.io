@@ -7,13 +7,11 @@ branches:
     - master
     - gh-pages
 
+gemfile: GemfileTravis
+
 cache:
   bundler: true
-  yarn: true
-  directories:
-    - "node_modules"
-
-gemfile: GemfileTravis
+  directories: "node_modules"
 
 before_script:
   - bundle install
