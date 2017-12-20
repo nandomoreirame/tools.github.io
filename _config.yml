@@ -28,7 +28,10 @@ collections:
 
 exclude:
   - Gemfile
+  - GemfileTravis
+  - cibuild.sh
   - Gemfile.lock
+  - vendor
   - node_modules
   - yarn.lock
   - README.md
