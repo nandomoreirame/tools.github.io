@@ -28,9 +28,9 @@ task('images', () =>
     })))
     .pipe(dest(config.dest.images)))
 
-task('fonts', () =>
-  src('./node_modules/font-awesome/fonts/*')
-    .pipe(dest(config.dest.fonts)))
+// task('fonts', () =>
+//   src('./node_modules/font-awesome/fonts/*')
+//     .pipe(dest(config.dest.fonts)))
 
 task('scripts', ['scripts:vendor'], () =>
   src([`${config.src.scripts}/**/*.js`])
@@ -76,11 +76,18 @@ task('stylus', () =>
     .pipe(dest(config.dest.stylesheets))
     .pipe($.plumber.stop()))
 
+task('minify-html', () => src('_site/**/*.html')
+  .pipe($.plumber(config.plumber))
+  .pipe($.htmlmin({ collapseWhitespace: true }))
+  .pipe($.size(config.size('Minify html')))
+  .pipe(dest('_site'))
+  .pipe($.plumber.stop()))
+
 /* eslint no-useless-escape: 0  */
 task('sw', () => wbBuild.generateSW({
   globDirectory: './_site/',
   swDest: `./_site/sw.js`,
-  globPatterns: ['**\/*.{html,js,css}']
+  globPatterns: ['**\/*.{html,js,css,png,jpg,svg,jpeg}']
 })
   .then(() => {
     console.log('Service worker generated.')
@@ -95,6 +102,6 @@ task('watch', () => {
 })
 
 task('build', (cb) =>
-  sequence(['stylus', 'scripts', 'images', 'fonts'], cb))
+  sequence(['stylus', 'scripts', 'images'], cb))
 
 task('default', (cb) => sequence(['build'], ['watch'], cb))

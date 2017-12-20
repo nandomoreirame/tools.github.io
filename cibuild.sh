@@ -9,10 +9,9 @@ fi
 # enable error reporting to the console
 set -e
 
-# cleanup "_site"
-rm -rf _site
-mkdir _site
-
 yarn build
 bundle exec jekyll build
-bundle exec htmlproofer ./_site
+#bundle exec htmlproofer ./_site
+
+yarn minify
+yarn sw
