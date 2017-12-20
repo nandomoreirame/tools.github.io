@@ -2,7 +2,7 @@ $(document).ready(() => {
   SimpleJekyllSearch({
     searchInput: document.getElementById('searchInput'),
     resultsContainer: document.getElementById('resultsContainer'),
-    json: `${base_url}search.json`,
+    json: `${baseUrl}search.json`,
     // searchResultTemplate: '<li class="search__item"><a href="{url}" class="search__link"><img src="{image}" alt="{title}"> <span>{title}<small>{category}</small></span></a></li>'
     searchResultTemplate: `<article class="toolsCard">
         <a class="toolsCard__inner" href="{url}" target="_blank" title="{title}">
@@ -35,9 +35,9 @@ $(document).ready(() => {
   })
 })
 
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker.register('sw.js')
-//     .then(registration => {
-//       console.log('offline worker registered!')
-//     })
-// }
+if (env === 'production' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(r => {
+      console.log('offline worker registered!')
+    })
+}

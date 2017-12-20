@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="{{ "/assets/stylesheets/bundle.css" | prepend: site.baseurl }}">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-<script>var base_url = '{{ "/" | prepend: site.baseurl | prepend: site.url }}';</script>
+<script>var baseUrl = '{{ "/" | prepend: site.baseurl | prepend: site.url }}',env = '{{ jekyll.environment }}';</script>
 
 {% if jekyll.environment == "production" %}
 

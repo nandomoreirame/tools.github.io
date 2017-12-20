@@ -2,7 +2,8 @@ module.exports = {
   'extends': 'standard',
   'globals': {
     $: true,
-    base_url: true,
+    env: true,
+    baseUrl: true,
     SimpleJekyllSearch: true
   }
 }
