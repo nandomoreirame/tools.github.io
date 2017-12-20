@@ -17,9 +17,12 @@ before_script:
   - bundle install
   - nvm install stable
   - yarn install
-
-script:
   - yarn build
+
+script: "bundle exec jekyll build --incremental"
+
+after_script:
+  - yarn sw
 
 deploy:
   provider: pages

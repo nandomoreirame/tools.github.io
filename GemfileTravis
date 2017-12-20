@@ -1,10 +1,9 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
-#gem "github-pages"
-#gem "travis-lint"
-
+gem "travis-lint"
+gem "github-pages"
 gem "jekyll"
 gem "jekyll-paginate"
 gem "jekyll-feed", "~> 0.6"

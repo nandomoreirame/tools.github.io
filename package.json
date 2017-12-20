@@ -9,7 +9,8 @@
     "clean": "rimraf _site",
     "start": "npm run clean && NODE_ENV=production gulp",
     "dev": "npm run clean && concurrently -k --kill-others-on-fail \"NODE_ENV=development gulp\" \"bundle exec jekyll serve\"",
-    "build": "npm run clean && NODE_ENV=production gulp build && bundle exec jekyll build --incremental && gulp sw",
+    "build": "npm run clean && NODE_ENV=production gulp build",
+    "sw": "gulp sw",
     "test": "echo 'no has test! lol'"
   },
   "repository": {
