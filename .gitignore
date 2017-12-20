@@ -66,3 +66,4 @@ html
 sw.js
 workbox-sw.*
 assets
+_includes/*.css

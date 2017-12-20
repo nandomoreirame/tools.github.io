@@ -64,16 +64,14 @@ task('scripts:vendor', () =>
 task('stylus', () =>
   src(`${config.src.stylus}/app.styl`)
     .pipe($.plumber(config.plumber))
-    .pipe($.sourcemaps.init())
     .pipe($.stylus(config.stylus))
     .pipe($.combineMq({
       beautify: true
     }))
     .pipe(isProduction ? $.cssnano(config.cssnano) : $.util.noop())
     .pipe($.rename(`bundle.css`))
-    .pipe($.sourcemaps.write())
     .pipe($.size(config.size('stylus')))
-    .pipe(dest(config.dest.stylesheets))
+    .pipe(isProduction ? dest('_includes') : dest(config.dest.stylesheets))
     .pipe($.plumber.stop()))
 
 task('minify-html', () => src('_site/**/*.html')
