@@ -7,5 +7,5 @@ date:   2017-11-18 10:36:44 -0200
 category: repositorios
 image: https://fundamental.digital/wp-content/uploads/2017/12/Screen-Shot-2017-12-12-at-16.07.07.png
 user: equipeGH
-userImage: https://fundamental.digital/wp-content/uploads/2017/12/growth-04.png
+userImage: /assets/images/growth-logo.png
 ---
