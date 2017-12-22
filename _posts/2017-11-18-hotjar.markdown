@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Hotjar"
+description: "Hotjar is a new and easy way to truly understand your web and mobile site visitors"
+toolUrl: https://www.hotjar.com/r/r5ca2ef
+date:   2017-11-18 10:36:44 -0200
+category: analytics
+image: /assets/images/hotjar-dashboard.png
+user: equipeGH
+userImage: /assets/images/growth-logo.png
+---
