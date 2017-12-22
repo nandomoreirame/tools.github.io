@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Visual website optimizer"
+title:  "VWO"
 description: "Optimizely lets you run ad-hoc A/B tests on your website."
 toolUrl: https://vwo.com
 date:   2017-11-18 10:36:44 -0200
