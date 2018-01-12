@@ -3,4 +3,4 @@ layout: category
 title: All In One
 ---
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi harum ut sed ea aperiam ducimus, repellendus temporibus eveniet nihil eius! Saepe consequuntur, iste praesentium modi illo neque doloremque temporibus qui!
+All In One, ou tudo em um em português são as ferramentas com mais de uma funcionalidade para gestão de marketing e vendas.
