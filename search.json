@@ -1,0 +1,234 @@
+[
+  
+    {
+      "title": "Woodpecker",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/woodpecker.png",
+      "description": "COLD EMAILS & FOLLOW-UPS sent automatically from your mailbox.",
+      "category": "vendas",
+      "url": "https://woodpecker.co/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "VWO",
+      "image": "/assets/images/visual-website-optimizer.png",
+      "description": "Optimizely lets you run ad-hoc A/B tests on your website.",
+      "category": "cro",
+      "url": "https://vwo.com",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Trello",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/trello-freelance-board.png",
+      "description": "Trello lets you work more collaboratively and get more done.",
+      "category": "gestao",
+      "url": "https://trello.com",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Reev",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/Reev-10.png",
+      "description": "Vender é sobre engajar. Seja por inbound ou outbound, o Reev conecta você a todo o seu público alvo de maneira personalizada.",
+      "category": "vendas",
+      "url": "http://reev.co",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "RD Station",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/dashboard-rd-station.gif",
+      "description": "A ferramenta completa para gerenciar e automatizar suas ações de Marketing Digital.",
+      "category": "allinone",
+      "url": "http://rdstation.com.br",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Ramper",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/ramper.png",
+      "description": "Ferramenta de automação comercial.",
+      "category": "vendas",
+      "url": "http://www.ramper.com.br",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Pipz",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/dashboard.png",
+      "description": "Adquira e converta leads, engaje com clientes e analise suas estratégias de negócio, tudo no mesmo lugar.",
+      "category": "allinone",
+      "url": "https://pipz.com/br",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Pipedrive",
+      "image": "/assets/images/pipedrive-dashboard.png",
+      "description": "Veja o seu funil com clareza, tome as decisões certas.",
+      "category": "vendas",
+      "url": "http://pipedrive.com",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Optimizely",
+      "image": "/assets/images/optimizely-dashboard.png",
+      "description": "Optimizely lets you experiment on everything—from design choices to algorithms.",
+      "category": "cro",
+      "url": "https://google.com/analytics",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Mix Panel",
+      "image": "/assets/images/mix-panel-dashboard.png",
+      "description": "Product analytics for product people.",
+      "category": "analytics",
+      "url": "https://mixpanel.com/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Meetime",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/meetime.png",
+      "description": "A Meetime é sua ferramenta completa para Inside Sales.",
+      "category": "vendas",
+      "url": "https://meetime.com.br",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Leadfeeder",
+      "image": "/assets/images/leadfeeder-dashboard.png",
+      "description": "Veja as empresas que estão visitando seu site.",
+      "category": "analytics",
+      "url": "http://www.leadfeeder.com?lfr=79561816e2",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Hotjar",
+      "image": "/assets/images/hotjar-dashboard.png",
+      "description": "Hotjar is a new and easy way to truly understand your web and mobile site visitors",
+      "category": "analytics",
+      "url": "https://www.hotjar.com/r/r5ca2ef",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Google Optimize",
+      "image": "/assets/images/google-optimize-dashboard.png",
+      "description": "Test, adapt, personalize.",
+      "category": "cro",
+      "url": "https://www.google.com/analytics/optimize/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Google Analytics",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/googleanalytics.png",
+      "description": "Turn insights into action.",
+      "category": "analytics",
+      "url": "https://google.com/analytics",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Github",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/github.png",
+      "description": "A better way to work together. GitHub brings teams together.",
+      "category": "repositorios",
+      "url": "https://github.com/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Controlle",
+      "image": "/assets/images/controlle.png",
+      "description": "Controlar as finanças da sua empresa ou startup não precisa ser chato.",
+      "category": "gestao",
+      "url": "https://controlle.com",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Contabilizei",
+      "image": "/assets/images/contabilizei-dashboard.png",
+      "description": "Contabilidade online e completa para pequenas empresas.",
+      "category": "gestao",
+      "url": "https://www.contabilizei.com.br/bem-vindo/?ref=d18566d352c23c5e29acab0c5b56cb8d&utm_source=plataforma",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Codepen",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/Screen-Shot-2017-12-12-at-16.07.07.png",
+      "description": "CodePen is a social development environment for front-end designers and developers.👋",
+      "category": "repositorios",
+      "url": "https://codepen.io/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "ClickSign",
+      "image": "/assets/images/clicksign-dashboard.png",
+      "description": "Com a Clicksign é possível assinar de forma tão simples quanto no papel.",
+      "category": "gestao",
+      "url": "https://clicksign.com",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } ,
+  
+    {
+      "title": "Basecamp",
+      "image": "https://fundamental.digital/wp-content/uploads/2017/12/basecamp-dashboard.png",
+      "description": "Basecamp organizes your communication, projects, and client work together so you have a central source of truth.",
+      "category": "gestao",
+      "url": "https://basecamp.com/",
+      "user": "equipeGH",
+      "userImage": "/assets/images/growth-logo.png",
+      "date": "2017-11-18 12:36:44 +0000"
+    } 
+  
+]
