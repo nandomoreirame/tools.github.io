@@ -4,7 +4,7 @@
 set -e
 
 yarn build
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 #yarn minify
 yarn sw
