@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://ferramentas.netlify.com/* http://ferramentas.digital/:splat 301!
