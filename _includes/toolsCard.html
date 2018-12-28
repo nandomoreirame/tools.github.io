@@ -9,15 +9,15 @@
     </header>
     <footer class="toolsCard__footer">
       {% if post.user %}
-        <div class="toolsCard__user">
+        <!-- <div class="toolsCard__user">
           {% if post.userImage %}
           <img src="{{ post.userImage }}" width="36" height="36" alt="">
           {% endif %}
           <span>
-            <!-- <small>Enviado por </small> -->
-            <!-- <strong>@{{ post.user }}</strong> -->
+            <small>Enviado por </small>
+             <strong>@{{ post.user }}</strong>
           </span>
-        </div>
+        </div> -->
       {% endif %}
       {% if post.toolUrl %}
         <div class="toolsCard__link">
