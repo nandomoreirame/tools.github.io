@@ -15,17 +15,17 @@ const $ = config.plugins
 
 task('images', () =>
   src(`${config.src.images}/**/*`)
-    .pipe($.cache($.image({
-      pngquant: true,
-      optipng: true,
-      zopflipng: true,
-      advpng: true,
-      jpegRecompress: false,
-      jpegoptim: true,
-      mozjpeg: true,
-      gifsicle: true,
-      svgo: true
-    })))
+//     .pipe($.cache($.image({
+//       pngquant: true,
+//       optipng: true,
+//       zopflipng: true,
+//       advpng: true,
+//       jpegRecompress: false,
+//       jpegoptim: true,
+//       mozjpeg: true,
+//       gifsicle: true,
+//       svgo: true
+//     })))
     .pipe(dest(config.dest.images)))
 
 // task('fonts', () =>

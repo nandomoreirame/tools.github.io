@@ -26,6 +26,9 @@ collections:
     output: true
     permalink: /categoria/:title/
 
+include:
+  - _redirects
+
 exclude:
   - Gemfile
   - GemfileTravis
