@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ramper"
-description: "Ferramenta de automação comercial."
+description: "Ferramenta de automação comercial inteligente. Melhore suas vendas."
 toolUrl: http://www.ramper.com.br
 date:   2017-11-18 10:36:44 -0200
 category: vendas
