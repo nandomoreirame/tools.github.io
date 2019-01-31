@@ -16,9 +16,9 @@ hr
   width 100%
   margin-left 0
   @extend $clearfix
-  +above(phone-sm)
-    padding 120px 2rem 0
   +above(tablet-md)
+    padding 120px 2rem 0
+  +above(desktop-lg)
     width calc(100% - 20rem)
     padding 120px 6.25rem 0
     margin-left 20rem
@@ -40,7 +40,7 @@ hr
   float right
   position relative
   z-index 200
-  +above(tablet-md)
+  +above(desktop-lg)
     display none
 
 .toggleSidebar
@@ -54,7 +54,7 @@ hr
   z-index 300
   svg
     stroke textColor
-  +above(tablet-md)
+  +above(desktop-lg)
     transition margin .5s cubic-bezier(.4, 2, .68, 1)
     top 5px
     margin-left 20rem
@@ -86,7 +86,7 @@ input#toggleSidebar
       top 5px
     ~ .toggleSidebar svg
       stroke #fff
-    +above(tablet-md)
+    +above(desktop-lg)
       ~ .sidebar
         transform translate3d(-100%, 0, 0)
       ~ .main,
