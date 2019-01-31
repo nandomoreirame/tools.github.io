@@ -1,7 +1,12 @@
 .toolsCard
   margin toRem(spacingSmall) 0
   padding 0 toRem(spacingSmall)
-  flex 1 1 percentage(1/3)
+  width 100%
+  +above(desktop-lg)
+    width percentage(1/2)
+    float left
+  +above(desktop-xl)
+    width percentage(1/3)
   &__inner
     width 100%
     min-height 339px

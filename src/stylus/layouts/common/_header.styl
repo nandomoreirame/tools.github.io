@@ -14,7 +14,7 @@
   margin-left 0
   transition all .3s cubic-bezier(.4, 2, .68, 1)
   @extend .clearfix
-  +above(tablet-md)
+  +above(desktop-lg)
     width calc(100% - 20rem)
     margin-left 20rem
   &__navbar
@@ -27,7 +27,7 @@
     background-color whiteColor
     box-shadow 0 0 40px 0 rgba(blackColor, .1)
     z-index 100
-    +above(phone-sm)
+    +above(desktop-lg)
       transform translate3d(0, 0, 0)
       box-shadow none
   &__nav
@@ -35,12 +35,12 @@
     list-style none
     padding (spacingLarge * 4) spacingBase spacingBase
     margin 0
-    +above(phone-sm)
+    +above(desktop-lg)
       padding 0
       float right
     &-item
       display block
-      +above(phone-sm)
+      +above(desktop-lg)
         display inline-block
     &-link,
     &-search,
